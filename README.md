@@ -3,6 +3,7 @@
 A stylish and responsive calculator built with **HTML**, **CSS**, and **JavaScript**. It performs everyday calculations, supports keyboard input, and includes a smooth **light mode / dark mode** switch for a better user experience.
 
 ![Modern Calculator Preview](image-1.png)
+![Modern Calculator Preview](image-2.png)
 
 ## ✨ Features
 
