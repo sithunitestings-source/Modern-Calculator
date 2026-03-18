@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="calculator" role="main" aria-label="modern calculator">
+        <div class="calculator-header">
+            <h1 class="app-title">Calculator</h1>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+                <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+                <span class="theme-toggle-text">Light</span>
+            </button>
+        </div>
+
+        <!-- display region -->
+        <div class="display">
+            <div class="history" id="history-display" aria-live="polite"></div>
+            <div class="current" id="current-display" aria-live="polite">0</div>
+        </div>
+
+        <!-- button grid -->
+        <div class="buttons" role="group" aria-label="calculator keys">
+            <!-- first row: clear, delete, percent, divide -->
+            <button class="btn clear" id="clear" aria-label="clear all">C</button>
+            <button class="btn del" id="delete" aria-label="delete last">⌫</button>
+            <button class="btn operator" id="percent" aria-label="percent">%</button>
+            <button class="btn operator" id="divide" aria-label="divide">÷</button>
+
+            <!-- second row: 7, 8, 9, multiply -->
+            <button class="btn" id="num7">7</button>
+            <button class="btn" id="num8">8</button>
+            <button class="btn" id="num9">9</button>
+            <button class="btn operator" id="multiply" aria-label="multiply">×</button>
+
+            <!-- third row: 4,5,6, subtract -->
+            <button class="btn" id="num4">4</button>
+            <button class="btn" id="num5">5</button>
+            <button class="btn" id="num6">6</button>
+            <button class="btn operator" id="subtract" aria-label="subtract">−</button>
+
+            <!-- fourth row: 1,2,3, add -->
+            <button class="btn" id="num1">1</button>
+            <button class="btn" id="num2">2</button>
+            <button class="btn" id="num3">3</button>
+            <button class="btn operator" id="add" aria-label="add">+</button>
+
+            <!-- fifth row: zero (span-two), dot, equals -->
+            <button class="btn span-two" id="num0">0</button>
+            <button class="btn" id="decimal" aria-label="decimal point">.</button>
+            <button class="btn equals" id="equals" aria-label="equals">=</button>
+        </div>
+        <!-- hidden screen reader hint -->
+        <span class="sr-only" role="status" aria-live="assertive" id="live-announcer"></span>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
